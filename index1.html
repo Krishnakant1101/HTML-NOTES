@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  
     <h1>hello world!</h1> <!--h1 uses for bigger heading (Block element)-->
     <hr> <!--horizontal line-->
     <h2>i'm ready to learn html</h2> <!--h2 heading (Block element)-->
@@ -38,8 +39,8 @@
 
     <!--The <abbr> tag in HTML defines the abbreviation or short form of the text.
         It is used to provide a short form of text,-->
-    The <abbr> tag in HTML defines the abbreviation or short form of the text. It is used to provide a short form of
-        text,The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    <p>The <abbr> tag in HTML defines the abbreviation or short form of the text. It is used to provide a short form of
+            text,The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
 
     <!--it tells browser this is address and browser identify this tag
@@ -47,7 +48,108 @@
     <address>
         gram Behrol tehsil banda <br>
         Dis. Sagar, Madhya Pradesh
-    </address>    
+    </address>
+
+
+  
+
+
+
+    <!--Ordered HTML List - The Type Attribute
+
+The type attribute of the <ol> tag, defines the type of the list item marker:
+Type 	Description
+type="1" 	The list items will be numbered with numbers (default)
+type="A" 	The list items will be numbered with uppercase letters
+type="a" 	The list items will be numbered with lowercase letters
+type="I" 	The list items will be numbered with uppercase roman numbers
+type="i" 	The list items will be numbered with lowercase roman numbers-->
+    <ol type="1" start="50"> <!-- counting starts from -->
+        <li>Coffee</li> <!--list items-->
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+
+
+
+
+
+
+    <!--Unordered HTML List - Choose List Item Marker
+
+The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
+Value 	Description
+disc 	:-Sets the list item marker to a bullet (default)
+circle 	:-Sets the list item marker to a circle
+square 	:-Sets the list item marker to a square
+none-->
+    <ul style="list-style-type:disc;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+
+
+
+
+
+    <!--Definition and Usage
+
+The <dl> tag defines a description list.
+
+The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).-->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+
+
+
+
+
+
+
+
+    <!--Create a link to W3Schools.com
+    # a tag is inline element
+    -->
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+
+
+
+
+
+
+
+    <!--The <nav> tag defines a set of navigation links.
+
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of navigation links.
+
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+# nav tag is block element 
+-->
+<nav>
+    <a href="#section1">section1</a> |
+    <a href="#section2">section2</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/python/">Python</a>
+  </nav> 
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
