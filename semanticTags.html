@@ -1,0 +1,199 @@
+<!--Definition and Usage
+The <header> element represents a container for introductory content or a set of navigational links.
+
+A <header> element typically contains:
+
+one or more heading elements (<h1> - <h6>)
+logo or icon
+authorship information
+Note: You can have several <header> elements in one HTML document. However, <header> cannot be placed
+      within a <footer>, <address> or another <header> element.-->
+        <header>
+            <h1>Main page heading here</h1>
+            <p>Posted by John Doe</p>
+          </header>
+        
+        
+        
+        
+        
+          <!--The <main> tag specifies the main content of a document.
+        
+        The content inside the <main> element should be unique to the document. It should not contain
+            any content that is repeated across documents such as sidebars, navigation links, copyright
+            information, site logos, and search forms.
+        
+        Note: There must not be more than one <main> element in a document. The <main> element must NOT 
+              be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.-->
+        
+                <main>
+                  <h1>Most Popular Browsers</h1>
+                  <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+                
+                  <article>
+                    <h2>Google Chrome</h2>
+                    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                  </article>
+                
+                  <article>
+                    <h2>Mozilla Firefox</h2>
+                    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                  </article>
+                
+                  <article>
+                    <h2>Microsoft Edge</h2>
+                    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                  </article>
+                </main>
+        
+        
+        
+        
+        
+        
+        
+        
+                <!--    
+            The <footer> tag in HTML is used to define the footer section of a webpage or a specific section within the page. This area typically contains information like:
+        
+        Copyright details
+        Contact information
+        Links to privacy policy or terms of service
+        Social media links
+        Navigation links to other parts of the website-->
+        <footer>
+          <p>&copy; 2024 My Website. All rights reserved.</p>
+          <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+          <p>Follow us on:
+              <a href="#twitter">Twitter</a>,
+              <a href="#facebook">Facebook</a>,
+              <a href="#instagram">Instagram</a>
+          </p>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--The <article> tag in HTML is used to define self-contained, independent content
+           on a webpage. Each <article> should make sense on its own and be distributable, 
+            such as blog posts, news articles, forum posts, or other standalone sections of content.-->
+            <article>
+              <h2>My Blog Post</h2>
+              <p>This is the content of the blog post...</p>
+          
+              <section>
+                  <h3>Comments</h3>
+                  <article>
+                      <p>Comment by John Doe: Great post!</p>
+                  </article>
+                  <article>
+                      <p>Comment by Jane Smith: I found this very informative.</p>
+                  </article>
+              </section>
+          </article>
+        
+        
+        
+        
+        
+        
+          <!--The <aside> tag in HTML is used to define content that is indirectly related to the main content 
+            of the webpage. It is typically used for sidebars, pull quotes, additional notes, or related information 
+            that enhances the primary content but isn't essential to its understanding.
+        
+        Key Points about the <aside> Tag:
+        Supplementary content: It holds information that is tangentially related to the main content, such as sidebars, ads, or references.
+        Placement: It can be placed inside or outside of <main>. When inside, it typically applies to a specific section of the page. When outside, it can apply to the entire page.
+        Accessibility: Helps screen readers and other assistive technologies understand that the content is not part of the main flow but provides extra or related information.-->
+          <main>
+            <article>
+                <h2>Best Hiking Trails in 2024</h2>
+                <p>If you're planning a hike, here are the best trails to explore this year...</p>
+        
+                <aside>
+                    <p><strong>Sponsored:</strong> Check out the latest hiking gear at <a href="#">OutdoorShop.com</a>.</p>
+                </aside>
+            </article>
+        </main>
+        
+        
+        
+        
+        <!--
+        The <details> tag in HTML is used to create interactive disclosure widgets, where users can hide or reveal additional information on demand. The content inside the <details> element is hidden by default, and it can be toggled to be shown or hidden by clicking.
+        
+        Typically, it is used in combination with the <summary> tag, which provides a visible heading that users can click to expand or collapse the details.
+        
+        Key Points about the <details> Tag:
+        Interactive element: It allows users to show or hide content, useful for FAQs, additional notes, or instructions.
+        Built-in functionality: No need for JavaScript to handle the expand/collapse behavior—this is built into the browser.
+        Accessibility: Improves accessibility by providing a clear way for users to interact with hidden content.-->
+        <details>
+          <summary>Learn More About Web Development</summary>
+          <p>Web development involves building websites and web applications...</p>
+          <details>
+              <summary>Frontend Development</summary>
+              <p>Frontend development deals with the visual and interactive aspects of a website, using HTML, CSS, and JavaScript.</p>
+          </details>
+          <details>
+              <summary>Backend Development</summary>
+              <p>Backend development focuses on server-side logic, databases, and APIs that power the website.</p>
+          </details>
+        </details>
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--
+        The <mark> tag in HTML is used to highlight or "mark" text that is of relevance or importance in a particular context. It visually emphasizes the text by highlighting it (usually with a yellow background by default), similar to how you would use a highlighter on paper.
+        
+        Key Points about the <mark> Tag:
+        Purpose: It indicates text that has special relevance, such as search results or important information within a larger body of text.
+        Default styling: The browser typically highlights text with a yellow background and black text, though you can customize it using CSS.
+        Accessibility: It helps visually distinguish key information, making it useful in search result pages, notes, or highlights.-->
+        <p>Here's a sentence with <mark>important</mark> information highlighted for emphasis.</p>
+        
+        <p>Search results for "HTML":
+            <mark>HTML</mark> stands for HyperText Markup Language and is the standard language for creating web pages.
+        </p>
+
+
+
+
+
+
+
+
+        <!--
+        
+        # The <div> element is used as a container for other HTML elements.
+        # The <div> element is by default a block element, meaning that it takes all 
+          available width, and comes with line breaks before and after.   
+
+        -->
+        <div>
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div> 
+
+
+
+
+
+
+       
+          
+
+       <!--The <span> tag is an inline container used to mark up a part of a text, or a
+           part of a document.-->   
+
+           
